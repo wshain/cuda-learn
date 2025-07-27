@@ -1,7 +1,7 @@
 // gridDim.x表示当前网格有几个block
 // blockIdx.x表示当前第几个线程块，
 // blockDim.x表示当前线程块内的线程数量
-// threadIdx.x表示当前是第几个线程#include <stdio.h>
+// threadIdx.x表示当前是第几个线程
 #include <stdio.h>
 #include <stdlib.h>
 
