@@ -20,7 +20,7 @@ def transpose(odata, idata):
     for i in range(0, TILE_DIM, BLOCK_ROWS):
         tile[cuda.threadIdx.y + i, cuda.threadIdx.x]  = idata[y + i, x]
     
-    cuda.syncthreads();
+    cuda.syncthreads()
     x = cuda.blockIdx.y * TILE_DIM + cuda.threadIdx.x
     y = cuda.blockIdx.x * TILE_DIM + cuda.threadIdx.y
 
